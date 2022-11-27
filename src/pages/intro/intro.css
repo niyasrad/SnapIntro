@@ -120,7 +120,7 @@
     .intro-pre{
         display: block;
         width: 100%;
-        height: calc(50% - 50px);
+        height: calc(50% - 100px);
     }
     .intro-pre img{
         width: 100%;
