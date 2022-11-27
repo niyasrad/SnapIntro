@@ -1,0 +1,192 @@
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.navbar .nav-first{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-around;
+    padding-left: 50px;
+
+}
+.navbar .nav-first .logo{
+    height: 30px;
+}
+.navbar .nav-first img{
+    user-select: none;
+    
+
+}
+.navbar .nav-first div{
+    text-decoration: none;
+    cursor:pointer;
+    color: grey;
+    font-weight: 500;
+    user-select: none;
+}
+.navbar .nav-first div:hover{
+    color: black;
+}
+.navbar .nav-first div div{
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+    border-radius:23px;
+    background:#ffffff;
+    box-shadow: -9px -9px 20px #ffffff, 9px 9px 20px #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: absolute; 
+    font-size: 14px;
+}
+.navbar .nav-first div div a{
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 30px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.navbar .nav-first div div img{
+    width: 20px;
+    height: 20px;
+}
+.navbar .nav-first a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+}
+.navbar .nav-first a:hover{
+    color: black;
+}
+.navbar .nav-second {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+.navbar .nav-second button{
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 11px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+.navbar .nav-second img{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+.navbar .nav-second div{
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar {
+        align-items: flex-start;
+        background-color: unset;
+    }
+    .navbar .nav-first div{
+        display: none;
+    }
+    .navbar .nav-first a{
+        display: none;
+    }
+    .navbar .nav-second{
+        padding-left:30px;
+        padding-right: 30px;
+        background-color: white;
+        
+    }
+    .navbar .nav-second img{
+        display: block;
+
+    }
+    .men{
+        position: absolute;
+        right: 20px;
+    }
+    .navbar .nav-second div{
+        display: block;
+    }
+    .navbar .nav-second button{
+        display: none;
+    }
+    .navbar .nav-second .newbar{
+        -webkit-animation: fadeIn 0.3s;
+        animation: fadeIn 0.3s;
+        padding-top: 50px;
+        width: auto;
+        height: 100vh;
+        gap: 30px;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-second .newbar .smallman{
+        cursor:pointer;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .nav-second .newbar .smallman{
+        display: flex;
+        font-size: 1.1em;
+    }
+    .navbar .nav-second .newbar .waht{
+        width: 10px;
+        height: 10px;
+    }
+    .newbar .bigman{
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        padding-top: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .newbar div a{
+        height: 30px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: grey;
+        font-weight: 500;
+        font-size: 1.05em;
+    }
+    .newbar a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+    .navbar .nav-second .newbar button{
+        display: block;
+        width: 150px; 
+        height: 40px;
+        margin:0;
+        border-radius: 11px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
